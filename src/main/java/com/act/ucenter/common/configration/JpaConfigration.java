@@ -1,6 +1,5 @@
 package com.act.ucenter.common.configration;
 
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
@@ -13,8 +12,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @Configuration
 @EnableJpaRepositories("com.act.ucenter.*.**")
 public class JpaConfigration {
-    @Bean
-    @EnableJpaRepositories(basePackages = "com.act.ucenter.common.configration.configration.Repositories)
-    interface Configuration { }
+
 
 }

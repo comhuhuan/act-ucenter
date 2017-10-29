@@ -1,125 +1,132 @@
-/**   
- * @Title: LoginVO.java 
- * @Package com.act.web.module.common.vo 
- * @Description: (登入模块vo) 
- * @author   fmj
- * @date 2017-2-6 下午5:10:14 
- * @version V1.0   
+/**
+ * @Title: LoginVO.java
+ * @Package com.act.web.module.common.vo
+ * @Description: (登入模块vo)
+ * @author fmj
+ * @date 2017-2-6 下午5:10:14
+ * @version V1.0
  */
 package com.act.ucenter.login.vo;
 
 public class LoginVo {
-	public String forget;
-	private String loginIsCode;
-	/* 忘记密码模块 */
-	private String uid;
-	private String act;
-	private String step;
-	private String question;
-	private String answer;
-	private String newpwd;
-	/* 登入方法 */
-	private String userId;
-	private String password;
-	private String verifyId;
+    public String forget;
+    private String loginIsCode;
+    /* 忘记密码模块 */
+    private String uid;
+    private String act;
+    private String step;
+    private String question;
+    private String answer;
+    private String newpwd;
+    /* 登入方法 */
+    private String username;
+    private String password;
+    private String verifyId;
 
-	/* delete id */
-	private String deleteIds;
+    private DataVo data;
+    /* delete id */
+    private String deleteIds;
 
-	public String getLoginIsCode() {
-		return loginIsCode;
-	}
+    public DataVo getData() {
+        return data;
+    }
 
-	public void setLoginIsCode(String loginIsCode) {
-		this.loginIsCode = loginIsCode;
-	}
+    public void setData(DataVo data) {
+        this.data = data;
+    }
 
-	public String getAct() {
-		return act;
-	}
+    public String getLoginIsCode() {
+        return loginIsCode;
+    }
 
-	public void setAct(String act) {
-		this.act = act;
-	}
+    public void setLoginIsCode(String loginIsCode) {
+        this.loginIsCode = loginIsCode;
+    }
 
-	public String getUid() {
-		return uid;
-	}
+    public String getAct() {
+        return act;
+    }
 
-	public void setUid(String uid) {
-		this.uid = uid;
-	}
+    public void setAct(String act) {
+        this.act = act;
+    }
 
-	public String getStep() {
-		return step;
-	}
+    public String getUid() {
+        return uid;
+    }
 
-	public void setStep(String step) {
-		this.step = step;
-	}
 
-	public String getQuestion() {
-		return question;
-	}
+    public String getStep() {
+        return step;
+    }
 
-	public void setQuestion(String question) {
-		this.question = question;
-	}
+    public void setStep(String step) {
+        this.step = step;
+    }
 
-	public String getAnswer() {
-		return answer;
-	}
+    public String getQuestion() {
+        return question;
+    }
 
-	public void setAnswer(String answer) {
-		this.answer = answer;
-	}
+    public void setQuestion(String question) {
+        this.question = question;
+    }
 
-	public String getNewpwd() {
-		return newpwd;
-	}
+    public String getAnswer() {
+        return answer;
+    }
 
-	public void setNewpwd(String newpwd) {
-		this.newpwd = newpwd;
-	}
+    public void setAnswer(String answer) {
+        this.answer = answer;
+    }
 
-	public String getForget() {
-		return forget;
-	}
+    public String getNewpwd() {
+        return newpwd;
+    }
 
-	public void setForget(String forget) {
-		this.forget = forget;
-	}
+    public void setNewpwd(String newpwd) {
+        this.newpwd = newpwd;
+    }
 
-	public String getUserId() {
-		return userId;
-	}
+    public String getForget() {
+        return forget;
+    }
 
-	public void setUserId(String userId) {
-		this.userId = userId;
-	}
+    public void setForget(String forget) {
+        this.forget = forget;
+    }
 
-	public String getPassword() {
-		return password;
-	}
 
-	public void setPassword(String password) {
-		this.password = password;
-	}
+    public String getUsername() {
+        return username;
+    }
 
-	public String getVerifyId() {
-		return verifyId;
-	}
+    public void setUsername(String username) {
+        this.username = username;
+    }
 
-	public void setVerifyId(String verifyId) {
-		this.verifyId = verifyId;
-	}
+    public String getPassword() {
+        return password;
+    }
 
-	public String getDeleteIds() {
-		return deleteIds;
-	}
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
-	public void setDeleteIds(String deleteIds) {
-		this.deleteIds = deleteIds;
-	}
+    public String getVerifyId() {
+        return verifyId;
+    }
+
+    public void setVerifyId(String verifyId) {
+        this.verifyId = verifyId;
+    }
+
+    public String getDeleteIds() {
+        return deleteIds;
+    }
+
+    public void setDeleteIds(String deleteIds) {
+        this.deleteIds = deleteIds;
+    }
 
 }

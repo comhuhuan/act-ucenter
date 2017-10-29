@@ -1,4 +1,9 @@
-///**
+package com.act.ucenter.common.interceptor;
+
+import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 // * @Title: CommonInterceptor.java
 // * @Package com.act.web.interceptor
 // * @Description: (登入拦截器)
@@ -6,7 +11,7 @@
 // * @date 2017-2-14 上午11:25:19
 // * @version V1.0
 // */
-//package com.act.ucenter.common.interceptor;
+
 //
 //import com.act.web.constant.CommonContant;
 //import com.act.web.util.ConfigLoadUtil;
@@ -63,3 +68,19 @@
 //    }
 //
 //}
+
+
+public class CommonInterceptor extends HandlerInterceptorAdapter {
+
+    @Override
+    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
+            throws Exception {
+
+        response.setHeader("Access-Control-Allow-Headers", "X-Requested-With, accept, content-type, xxxx");
+        response.setHeader("Access-Control-Allow-Methods", "GET, HEAD, POST, PUT, DELETE, TRACE, OPTIONS, PATCH");
+        response.setHeader("Access-Control-Allow-Origin", "*");
+
+
+        return true;
+    }
+}
